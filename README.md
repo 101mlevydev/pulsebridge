@@ -1,4 +1,4 @@
-# zepp-sync-sidecar
+# pulsebridge
 
 A small, self-hosted sidecar (CLI: `bio-bridge`) that pulls your own health data from a
 Zepp / Amazfit wearable, normalizes it, and forwards it to an HTTP endpoint of your choice.
