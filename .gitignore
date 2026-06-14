@@ -1,0 +1,26 @@
+# NEVER commit these — they contain live credentials
+config.json
+*.har
+capture*.har
+*.sqlite
+*.sqlite-journal
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,15 @@
+bio-bridge
+Copyright (c) 2026 Michael Levy
+
+This product includes vendored third-party software:
+
+  src/bio_bridge/_zepp_client.py
+    Vendored from: https://github.com/m4ary/zepp-health-cli
+    Pinned commit: a466dfa (2026-04-18)
+    This file retains its original authorship and upstream license. It was
+    copied in (not modified beyond what is noted in its header) to keep the
+    Zepp/Huami API client self-contained. Refer to the upstream repository
+    for its license terms.
+
+All other code in this repository is original work by the copyright holder
+above and is released under the MIT License (see LICENSE).

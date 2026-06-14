@@ -1,0 +1,22 @@
+[Unit]
+Description=bio-bridge sync (private data sidecar)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=bio-bridge
+Group=bio-bridge
+WorkingDirectory=/opt/bio-bridge
+EnvironmentFile=/etc/bio-bridge.env
+ExecStart=/opt/bio-bridge/.venv/bin/bio-bridge sync
+StandardOutput=journal
+StandardError=journal
+Nice=10
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/bio-bridge
+ProtectHome=true

@@ -1,0 +1,12 @@
+[Unit]
+Description=Run bio-bridge sync every 30 minutes
+Requires=bio-bridge.service
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=30min
+AccuracySec=30s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
